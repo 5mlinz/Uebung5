@@ -53,5 +53,26 @@ public class Basics
         {
             System.out.println("Aufgabe 1.3.b\nAussentemperatur ist groeszer als die Innentemperatur\n");
         }
+
+        //Aufgabe 1.4
+        //a)
+        if(temperaturInnen < 20 && !(fensterOffenAnzahl != 0))
+        {
+            System.out.println("Aufgabe 1.4.a)\nHeizung wird eingeschaltet\n");
+        }
+        else
+        {
+            System.out.println("Aufgabe 1.4.a)\nHeizung aus\n");
+        }
+        //b)
+        int uhrzeit = 19;
+        if(bewegungErkannt || uhrzeit > 18)
+        {
+            System.out.println("Aufgabe 1.4.b)\nLicht wird eingeschaltet\n");
+        }
+        else
+        {
+            System.out.println("Aufgabe 1.4.b)\nLicht aus\n");
+        }
     }
 }
