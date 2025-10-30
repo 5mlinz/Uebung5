@@ -106,6 +106,8 @@ public class Basics
         //norm2 kp
         //isLeapYear kp
 
-        
+        //Aufgabe 2.3
+        //static funktionen muessen keine Objekte erzeugen um aufgerufen zu werden.
+        //ohne static muesste erst ein Objekt erzeugt werden mit MathUtils m = new MathUtils();
     }
 }
