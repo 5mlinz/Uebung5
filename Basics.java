@@ -30,6 +30,28 @@ public class Basics
         gesamtVerbrauchWh += verbrauchHeuteWh;
         System.out.println("Aufgabe 1.2.b)\nNeuer gesamtVerbrauchWh betraegt " + gesamtVerbrauchWh + " Wh.\n");
 
-
+        //1.3
+        //a)
+        if(temperaturInnen > 22)
+        {
+            System.out.println("Aufgabe 1.3.a)\nDie Innenraumtemperatur liegt ueber 22°C\n");
+        }
+        else
+        {
+            System.out.println("Aufgabe 1.3.a)\nDie Innenraumtemperatur liegt NICHT ueber 22°C\n");
+        }
+        //b)
+        if(temperaturAussen < temperaturInnen)
+        {
+            System.out.println("Aufgabe 1.3.b)\nAussentemperatur ist kleiner als die Innentemperatur\n");
+        }
+        else if (temperaturAussen == temperaturInnen)
+        {
+            System.out.println("Aufgabe 1.3.b\nAussen und Innentemperatur sind gleich\n");
+        }
+        else
+        {
+            System.out.println("Aufgabe 1.3.b\nAussentemperatur ist groeszer als die Innentemperatur\n");
+        }
     }
 }
