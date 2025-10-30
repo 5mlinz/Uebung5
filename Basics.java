@@ -131,5 +131,23 @@ public class Basics
         System.out.println(r.perimeter());   // 12.0
         System.out.println(r.contains(new Point2D(0, 3))); // true (Rand)
 
+        // Aufgabe 5.
+        Shape[] shapes = new Shape[] 
+        {
+            new Circle(new Point2D(0, 0), 1.5),
+            new RectShape(Rectangle.fromCenter(new Point2D(0, 0), 4, 2))
+        };
+
+        double sumArea = 0.0, sumPerimeter = 0.0;
+        for (Shape s : shapes) 
+        {
+            sumArea      += s.area();      // polymorpher Aufruf
+            sumPerimeter += s.perimeter(); // polymorpher Aufruf
+            System.out.println(s.toString());
+        }
+        System.out.println("Gesamtfläche: " + sumArea);
+        System.out.println("Gesamtumfang: " + sumPerimeter);
+
+
     }
 }
