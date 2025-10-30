@@ -121,5 +121,15 @@ public class Basics
 
         double dist = p1.distanceTo(p2);
         System.out.println("Abstand zwischen P1 und P2: " + dist);
+
+        //Aufgabe 4.
+        System.out.println("\nAufgabe 4:");
+
+        Point2D c = new Point2D(2, 3);
+        Rectangle r = Rectangle.fromCenter(c, 4, 2); // bl=(0,2), tr=(4,4)
+        System.out.println(r.area());        // 8.0
+        System.out.println(r.perimeter());   // 12.0
+        System.out.println(r.contains(new Point2D(0, 3))); // true (Rand)
+
     }
 }
