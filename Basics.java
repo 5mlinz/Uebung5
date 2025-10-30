@@ -82,5 +82,25 @@ public class Basics
         //b)
         String modusMeldung = modusSymbol + ": Heizung aktiv";
         System.out.println("Aufgabe 1.5.b)\n" + modusMeldung);
+
+        //Aufgabe 2.1
+        double gerundeteAussenTemperatur = MathUtils.roundTo(temperaturAussen, 1);
+        //Grad angaben mit mehreren Nachkommastellen sind unueblich, meistens nennt man maximal eine Nachkommastelle.
+        System.out.println("Aussentemperatur " + temperaturAussen + " gerundet auf eine Nachkommastelle wird zu: " + gerundeteAussenTemperatur);
+
+        // keine ahnung wofuer man norm2 verwenden sollte, distanzberechnung zwischen Sensoren?
+
+        // isLeapYear zum richtigen zaehlen des Gesamtverbrauchs
+        int actualYear = 2025;
+        if(MathUtils.isLeapYear(actualYear))
+        {
+            System.out.println("Dieses Jahr ist ein Schaltjahr");
+        }
+        else
+        {
+            System.out.println("Dieses Jahr ist kein Schaltjahr");
+        }
+
+        //Aufgabe 2.2
     }
 }
