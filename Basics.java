@@ -102,5 +102,10 @@ public class Basics
         }
 
         //Aufgabe 2.2
+        //roundTo hat limitationen bei vielen Nachkommastellen, wegen den Rundungsfehlern von Gleitkommazahlen in binaerdarstellung
+        //norm2 kp
+        //isLeapYear kp
+
+        
     }
 }
