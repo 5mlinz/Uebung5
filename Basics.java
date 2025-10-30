@@ -109,5 +109,17 @@ public class Basics
         //Aufgabe 2.3
         //static funktionen muessen keine Objekte erzeugen um aufgerufen zu werden.
         //ohne static muesste erst ein Objekt erzeugt werden mit MathUtils m = new MathUtils();
+
+        //Aufgabe 3.
+        //immutable bedeutet, dass nach der Erstellung eines Objekts, dessen Werte nicht mehr geaendert werden koennen.
+        //Vorteile von immutable ist u.a. die Sicherheit, dass diese Objekte nicht mehr ausversehentlich geaendert werden.
+        Point2D p1 = new Point2D(2.0, 3.0);
+        Point2D p2 = p1.translate(1.0, -1.0); // neuer Punkt bei (3.0, 2.0)
+
+        System.out.println("P1: " + p1);
+        System.out.println("P2 (verschoben): " + p2);
+
+        double dist = p1.distanceTo(p2);
+        System.out.println("Abstand zwischen P1 und P2: " + dist);
     }
 }
