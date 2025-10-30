@@ -74,5 +74,13 @@ public class Basics
         {
             System.out.println("Aufgabe 1.4.b)\nLicht aus\n");
         }
+
+        //Aufgabe 1.5
+        //a)
+        String statusMeldung = "Raum: " + raumName + ", Innen: " + temperaturInnen + " °C, Außen: " + temperaturAussen + " °C";
+        System.out.println("Aufgabe 1.5.a)\n" + statusMeldung);
+        //b)
+        String modusMeldung = modusSymbol + ": Heizung aktiv";
+        System.out.println("Aufgabe 1.5.b)\n" + modusMeldung);
     }
 }
